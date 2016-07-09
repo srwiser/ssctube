@@ -1,0 +1,123 @@
+.clear {
+  clear: both;
+}
+.nobr {
+  white-space: nowrap;
+}
+#people_contacts_container .people-entry-item .p_content_left,
+.people-entry-item .p_content_left {
+  width: 24% !important;
+  float: left !important;
+  text-align: center;
+}
+#people_contacts_container .people-entry-item .p_content_right,
+.people-entry-item .p_content_right {
+  width: 74% !important;
+  float: right !important;
+}
+#people_contacts_container .people-entry-item .p_content_left img,
+.people-entry-item .p_content_left img {
+  width: auto !important;
+  max-width: 100% !important;
+}
+#people_contacts_container .people-entry-item .p_content_left img,
+.people-entry-item .p_content_left img,
+body #people_contacts_container #map_canvas .infowindow .info_avatar img,
+body #people_contacts_container .map_canvas_container .infowindow .info_avatar img,
+.custom_contact_popup .people_email_inquiry_default_image_container img {
+  background: #FFFFFF !important;
+  border: 1px solid #DBDBDB !important;
+  padding: 2px !important;
+  border-radius: 200px !important;
+  -moz-border-radius: 200px !important;
+  -webkit-border-radius: 200px !important;
+  box-shadow: 5px 5px 2px 2px #DBDBDB !important;
+  -moz-box-shadow: 5px 5px 2px 2px #DBDBDB !important;
+  -webkit-box-shadow: 5px 5px 2px 2px #DBDBDB !important;
+  box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+}
+#people_contacts_container .people_item .people-entry-item,
+.people_item .people-entry-item {
+  background-color: #FFFFFF;
+  border: 1px solid #DBDBDB !important;
+  border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 2px 2px #DBDBDB !important;
+  -moz-box-shadow: 5px 5px 2px 2px #DBDBDB !important;
+  -webkit-box-shadow: 5px 5px 2px 2px #DBDBDB !important;
+}
+#people_contacts_container .infowindow {
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+.custom_contact_popup * {
+  box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+}
+.people_ei_cb #cboxLoadedContent,
+.custom_contact_popup,
+#fancybox-content > div {
+  background-color: #ffffff !important;
+}
+.custom_contact_popup {
+  width: 520px;
+}
+body .custom_contact_popup,
+.custom_contact_popup {
+  font: normal 12px Arial, sans-serif !important;
+  color: #000000 !important;
+}
+.people_email_inquiry_contact_heading {
+  font: normal 14px Arial, sans-serif !important;
+  color: #000000 !important;
+}
+.people_email_inquiry_site_name {
+  font: normal 28px Arial, sans-serif !important;
+  color: #000000 !important;
+}
+.people_email_inquiry_profile_position {
+  font: bold 14px Arial, sans-serif !important;
+  color: #000000 !important;
+}
+.people_email_inquiry_profile_name {
+  font: bold 14px Arial, sans-serif !important;
+  color: #000000 !important;
+}
+.custom_contact_popup input,
+.custom_contact_popup textarea {
+  border: 1px solid #CCCCCC !important;
+  border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  background-color: #FAFAFA !important;
+  color: #000000 !important;
+}
+body .people_email_inquiry_form_button,
+.people_email_inquiry_form_button {
+  position: relative !important;
+  cursor: pointer;
+  display: inline-block !important;
+  line-height: 1 !important;
+}
+body .people_email_inquiry_form_button,
+.people_email_inquiry_form_button {
+  padding: 7px 10px !important;
+  margin: 0;
+  background-color: #eda6a6 !important;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(.2,#FBCACA),color-stop(1,#e54229)) !important;
+  background: -moz-linear-gradient(center top,#FBCACA 20%,#e54229 100%) !important;
+  border: 1px solid #EE2B2B !important;
+  border-radius: 3px 3px 3px 3px !important;
+  -moz-border-radius: 3px 3px 3px 3px !important;
+  -webkit-border-radius: 3px 3px 3px 3px !important;
+  font: normal 12px Arial, sans-serif !important;
+  color: #FFFFFF !important;
+  text-align: center !important;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+  text-decoration: none !important;
+}

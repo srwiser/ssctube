@@ -1,0 +1,94 @@
+[Jun 8, 2015 09:51:27 0-error] Error #8778656: Dropbox error. Details: `The Dropbox SDK requires the cURL PHP extension, but it looks like you don't have it (couldn't find function "curl_init").  Library: "/var/www/wordpress/wp-content/plugins/backupbuddy/destinations/dropbox2/lib/Dropbox/RequestUtil.php".`. Error Code: 
+[Jun 12, 2015 12:37:53 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:37:53 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:37:53 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:37:53 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:37:53 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:37:53 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:37:53 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:01 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Table 'BBnew-z3bt_et_social_stats' already exists` Errno: ``.
+[Jun 12, 2015 12:38:10 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:11 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:11 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:11 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:11 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:11 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:11 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:11 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:11 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:11 5.5-error] [restore] Additional 9010 errors were encountered but have not been displayed to avoid flooding the screen. All 9010 errors are logged to `/var/www/wordpress/importbuddy/mysql_9010_log-4f3zh50krb4y0qd.txt` if possible.
+[Jun 12, 2015 12:38:13 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:15 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:15 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:15 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:15 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:15 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:15 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:15 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:15 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:15 5.5-error] [restore] Additional 9010 errors were encountered but have not been displayed to avoid flooding the screen. All 9010 errors are logged to `/var/www/wordpress/importbuddy/mysql_9010_log-4f3zh50krb4y0qd.txt` if possible.
+[Jun 12, 2015 12:38:18 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Table 'BBnew-z3bt_postmeta' already exists` Errno: ``.
+[Jun 12, 2015 12:38:18 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '1' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:18 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '2' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:18 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '3' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:18 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '4' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:18 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '5' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:18 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '6' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:18 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '7' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:18 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '8' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:18 5.5-error] [restore] Additional 9010 errors were encountered but have not been displayed to avoid flooding the screen. All 9010 errors are logged to `/var/www/wordpress/importbuddy/mysql_9010_log-4f3zh50krb4y0qd.txt` if possible.
+[Jun 12, 2015 12:38:22 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Table 'BBnew-z3bt_postmeta' already exists` Errno: ``.
+[Jun 12, 2015 12:38:22 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '1' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:22 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '2' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:22 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '3' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:22 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '4' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:22 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '5' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:22 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '6' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:22 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '7' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:22 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `Duplicate entry '8' for key 'PRIMARY'` Errno: ``.
+[Jun 12, 2015 12:38:22 5.5-error] [restore] Additional 9010 errors were encountered but have not been displayed to avoid flooding the screen. All 9010 errors are logged to `/var/www/wordpress/importbuddy/mysql_9010_log-4f3zh50krb4y0qd.txt` if possible.
+[Jun 12, 2015 12:38:26 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:26 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:26 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:26 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:26 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:26 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:26 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:26 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:26 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 12, 2015 12:38:26 5.5-error] [restore] Additional 9010 errors were encountered but have not been displayed to avoid flooding the screen. All 9010 errors are logged to `/var/www/wordpress/importbuddy/mysql_9010_log-4f3zh50krb4y0qd.txt` if possible.
+[Jun 18, 2015 00:15:51 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:15:51 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:15:51 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:15:51 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:15:51 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:15:51 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:15:51 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:15:51 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:06 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:06 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:06 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:06 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:06 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:06 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:06 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:09 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:10 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:10 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:10 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:10 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:10 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:10 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:10 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:10 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:10 5.5-error] [restore] Additional 9010 errors were encountered but have not been displayed to avoid flooding the screen. All 9010 errors are logged to `/var/www/wordpress/importbuddy/mysql_9010_log-4f3zh50krb4y0qd.txt` if possible.
+[Jun 18, 2015 00:16:20 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:20 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:20 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:20 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:20 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:20 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:20 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:20 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:21 5.5-error] [restore] Error #9010: Unable to import SQL query. Error: `` Errno: ``.
+[Jun 18, 2015 00:16:21 5.5-error] [restore] Additional 9010 errors were encountered but have not been displayed to avoid flooding the screen. All 9010 errors are logged to `/var/www/wordpress/importbuddy/mysql_9010_log-4f3zh50krb4y0qd.txt` if possible.

@@ -1,0 +1,1174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Viral Quiz\n"
+"POT-Creation-Date: 2015-09-09 16:47+0100\n"
+"PO-Revision-Date: 2015-09-09 16:47+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: controller/WPVQDeletePlayer.php:26
+msgid "This player/quiz doesn't exist."
+msgstr ""
+
+#: controller/WPVQDeleteQuizz.php:14
+msgid "You can't do that ! Sorry."
+msgstr ""
+
+#: controller/WPVQDeleteQuizz.php:20
+msgid "Error during quiz deletion."
+msgstr ""
+
+#: controller/WPVQDeleteQuizz.php:24 controller/WPVQDuplicateQuizz.php:24
+msgid "This quiz doesn't exist."
+msgstr ""
+
+#: controller/WPVQDuplicateQuizz.php:14
+msgid "You can't do this ! Sorry."
+msgstr ""
+
+#: controller/WPVQDuplicateQuizz.php:20
+msgid "Error during quiz duplication."
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:7
+msgid "Current:"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:8
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:9
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:15
+msgid "point"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:10
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:11
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:12
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:13
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:16
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:17
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:18
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.multiplier.php:19
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.appreciation.append.php:7
+msgid "points"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.php:7
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.answer.append.php:7
+msgid "Answer :"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.php:10
+msgid "How many points this answer gives to each personality ?"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.php:26
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.answer.append.php:18
+msgid "Add an image to illustrate this answer"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.php:29
+#: views/WPVQAddQuestion.WPVQGamePersonality.append.php:23
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.answer.append.php:21
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:22
+msgid "Delete this picture"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.php:39
+#: views/WPVQAddQuestion.WPVQGamePersonality.append.php:49
+#: views/WPVQAddQuestion.WPVQGamePersonality.personality.append.php:14
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.answer.append.php:31
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:63
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.appreciation.append.php:16
+msgid "Do you really want to delete it ?"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.answer.append.php:39
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.answer.append.php:31
+msgid "Delete this answer"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.append.php:11
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:11
+msgid "Question"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.append.php:11
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:11
+msgid "Is it ..... ?"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.append.php:18
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:18
+msgid "Add a cover image to illustrate this question"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.append.php:30
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:30
+msgid "Add a new answer"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.append.php:30
+msgid "for this question"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.append.php:41
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:41
+msgid "Do you want to add a page after this question ?"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.append.php:49
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:64
+msgid "Delete this question"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.append.php:51
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:67
+msgid "Ranking"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.personality.append.php:4
+msgid "Personality"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.personality.append.php:4
+msgid "Personality name"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.personality.append.php:7
+msgid "Personality description :"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGamePersonality.personality.append.php:14
+msgid "Delete this personality"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.answer.append.php:8
+msgid "The ...."
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.answer.append.php:10
+msgid "This answer is the right answer"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:30
+msgid "to this question"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.append.php:51
+msgid "Do you want to give an explaination when people answer?"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.appreciation.append.php:6
+msgid "Less than"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.appreciation.append.php:7
+msgid "x"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.appreciation.append.php:7
+msgid "(excluded)"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.appreciation.append.php:10
+msgid "Appreciation :"
+msgstr ""
+
+#: views/WPVQAddQuestion.WPVQGameTrueFalse.appreciation.append.php:16
+msgid "Delete this appreciation"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:8
+msgid "Shortcuts :"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:10
+msgid "Minimize all the questions"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:11
+msgid "Expand all the questions"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:12
+msgid "Scroll to the settings section"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:17 views/WPVQAddQuizz.php:253
+msgid "Go back to personalities"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:17 views/WPVQAddQuizz.php:62
+#: views/WPVQAddQuizz.php:253
+msgid "step"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:19 views/WPVQAddQuizz.php:255
+msgid "Save this quiz"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:26
+msgid "Build a new"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:29
+msgid "True/False Quiz"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:31
+msgid "Personality Quiz"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:35
+msgid "Type your quiz name here"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:41 views/WPVQAddQuizz.php:71
+msgid "Step"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:41
+msgid "Create some personalities for your quiz"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:44
+msgid "If you put a picture in your personality descriptions"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:45 views/WPVQAddQuizz.php:103
+msgid "it will be used in the Facebook share box."
+msgstr ""
+
+#: views/WPVQAddQuizz.php:46 views/WPVQAddQuizz.php:104
+msgid "See what it means."
+msgstr ""
+
+#: views/WPVQAddQuizz.php:49
+msgid "Good to know :"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:50
+msgid ""
+"If you rename an existing personality, it will reset points associated to "
+"this personality on the next page."
+msgstr ""
+
+#: views/WPVQAddQuizz.php:58
+msgid "Add a new personality"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:62
+msgid "Let's go to build the quiz"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:71 views/WPVQAddQuizz.php:73
+msgid "Add some questions & answers to your quiz"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:78
+msgid ""
+"You can add picture for each question and answer, it makes your quiz more "
+"fun and viral."
+msgstr ""
+
+#: views/WPVQAddQuizz.php:81
+msgid "Protip To Make The Perfect Quiz :"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:82
+msgid ""
+"If you use pictures to illustrate the answers, each picture should be at "
+"least 300px * 300px."
+msgstr ""
+
+#: views/WPVQAddQuizz.php:93
+msgid "Add a new question"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:99
+msgid "Quiz results depending on the score (optional)"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:101
+msgid "Write something to people depending on their score."
+msgstr ""
+
+#: views/WPVQAddQuizz.php:102
+msgid "If you put a picture in an appreciation"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:109
+msgid "An example"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:109
+msgid "for a quiz with 10 questions"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:112
+msgid "Less than 4 points"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:112
+msgid "you are bad. Just bad."
+msgstr ""
+
+#: views/WPVQAddQuizz.php:113
+msgid "Less than 8 points"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:113
+msgid "Hum okay, not bad!"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:114
+msgid "Less than 10 points"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:114
+msgid "Really nice, good game."
+msgstr ""
+
+#: views/WPVQAddQuizz.php:115
+msgid "Less than 11 points"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:115
+msgid "Perfect! You are a real rockstar!"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:124
+msgid "Add a new appreciation"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:132
+msgid "Global options : configure the quiz"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:135
+msgid "Display & Gameplay"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:141
+msgid "What skin do you want"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:145
+msgid "The BuzzFeed Skin"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:146
+msgid "A Modern Flat Skin"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:147
+msgid "Custom Skin (use wpvq-custom.css in your root theme dir.)"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:154
+msgid "Display Random Questions ?"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:159
+msgid "and show only"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:159
+msgid "questions (put 999 for \"all\")"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:166
+msgid "Random order for answers ?"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:171
+msgid "Yes, shuffle the answers for each question"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:181
+msgid "Virality & Marketing"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:187
+msgid "People have to share the quiz to see their results :"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:192
+msgid "Yes, they have to share on Facebook"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:199
+msgid "Share buttons"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:204
+msgid "Display share buttons at the end of the quiz"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:211
+msgid "Capture e-mails"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:216
+msgid "People have to give their e-mail to see their results"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:223
+msgid "Capture names"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:228
+msgid "People have to give their first name to see their results"
+msgstr ""
+
+#: views/WPVQAddQuizz.php:235
+msgid "Promote the plugin"
+msgstr ""
+
+#: views/WPVQShortcode.php:267
+msgid "Correct!"
+msgstr ""
+
+#: views/WPVQShortcode.php:268
+msgid "Wrong!"
+msgstr ""
+
+#: views/WPVQShortcode.php:276
+msgid "Continue >>"
+msgstr ""
+
+#: views/WPVQShortcode.php:288
+msgid "Share the quiz to show your results !"
+msgstr ""
+
+#: views/WPVQShortcode.php:316
+msgid "Just tell us who you are to view your results !"
+msgstr ""
+
+#: views/WPVQShortcode.php:321
+msgid "Your first name :"
+msgstr ""
+
+#: views/WPVQShortcode.php:329
+msgid "Your e-mail address :"
+msgstr ""
+
+#: views/WPVQShortcode.php:340
+msgid "Show my results >>"
+msgstr ""
+
+#: views/WPVQShortcode.php:368
+msgid "Share your results"
+msgstr ""
+
+#: views/WPVQShortcode.php:452
+msgid "This quiz has been created with"
+msgstr ""
+
+#: views/WPVQShortcode.php:481
+msgid "You have to give your e-mail to see your results."
+msgstr ""
+
+#: views/WPVQShortcode.php:482
+msgid "You have to give your nickname to see your results."
+msgstr ""
+
+#: views/WPVQShowAddons.php:5 wp-viral-quiz.php:300
+msgid "Awesome Addons"
+msgstr ""
+
+#: views/WPVQShowAddons.php:12
+msgid ""
+"You can get awesome addons for WP Viral Quiz, and add new features to your "
+"site. If you need support, <a href=\"https://www.institut-pandore.com/wp-"
+"viral-quiz/support/\" target=\"_blank\">contact us</a>."
+msgstr ""
+
+#: views/WPVQShowAddons.php:20
+msgid ""
+"You need to <strong>put a valid Envato Purchase Code</strong> on the WP "
+"Viral Quiz settings page to access the awesome addons page."
+msgstr ""
+
+#: views/WPVQShowAddons.php:32
+msgid "WP Viral Quiz - Analytics"
+msgstr ""
+
+#: views/WPVQShowAddons.php:38
+msgid "Track players on your site like a boss, with Google Analytics."
+msgstr ""
+
+#: views/WPVQShowAddons.php:41
+msgid ""
+"See how many people play your quizzes, how many time they spend on your "
+"site, what do they do after a quiz, how many people shares on social media, "
+"etc."
+msgstr ""
+
+#: views/WPVQShowAddons.php:44
+msgid "Use each awesome features of Google Analytics to track your players."
+msgstr ""
+
+#: views/WPVQShowAddons.php:49
+msgid "The plugin is enabled on your blog."
+msgstr ""
+
+#: views/WPVQShowAddons.php:53
+msgid "Configure the plugin"
+msgstr ""
+
+#: views/WPVQShowAddons.php:58
+msgid ""
+"Ho, it seems the plugin is installed on your blog <strong>but it's not "
+"enabled</strong>."
+msgstr ""
+
+#: views/WPVQShowAddons.php:60
+msgid "Enable the plugin"
+msgstr ""
+
+#: views/WPVQShowAddons.php:67
+msgid "Price :"
+msgstr ""
+
+#: views/WPVQShowAddons.php:67
+msgid "free, pay with a tweet"
+msgstr ""
+
+#: views/WPVQShowAddons.php:76
+msgid "Thank you so much ! <3"
+msgstr ""
+
+#: views/WPVQShowAddons.php:80
+msgid "Download the plugin"
+msgstr ""
+
+#: views/WPVQShowAddons.php:84
+msgid ""
+"Once you have downloaded the file, install it like any other plugin "
+"<strong>and come back here</strong>."
+msgstr ""
+
+#: views/WPVQShowPlayers.php:7
+msgid "Players Database"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:12
+msgid "Player has been removed."
+msgstr ""
+
+#: views/WPVQShowPlayers.php:18
+msgid "All players for this quiz have been removed."
+msgstr ""
+
+#: views/WPVQShowPlayers.php:26
+msgid "Choose a quiz :"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:32
+msgid "View stats and players"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:40
+msgid "Total"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:40
+msgid "players"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:41
+msgid "Export the table to a CSV file"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:44
+msgid "Delete all players for this quiz"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:55 views/WPVQShowQuizzes.php:101
+msgid "Pages"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:71
+msgid "People"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:72
+msgid "Result"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:73
+msgid "Date"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:74
+msgid "Meta"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:90
+msgid "Anonymous"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:95
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:112
+msgid "No one has played this quiz yet!"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:122
+msgid "Informations about anonymous players :"
+msgstr ""
+
+#: views/WPVQShowPlayers.php:123
+msgid ""
+"If your quiz asks for first name/email at the end, \"anonymous players\" are "
+"people which don't fill the form and leave the page."
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:11
+msgid "Create a \"True/False\" Quiz"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:12
+msgid "Create a \"Personality\" Quiz"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:17
+msgid "Quiz has been updated."
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:23
+msgid "Quiz has been duplicated."
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:29
+msgid "Quiz has been removed."
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:35
+msgid "A new quiz has been created."
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:42
+msgid "Title"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:43
+msgid "Type"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:44
+msgid "Author"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:45
+msgid "Created on"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:46
+msgid "Last Update"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:47
+msgid "Shortcode"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:74
+msgid "Update"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:75
+msgid "Duplicate"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:76
+msgid "Delete"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:80
+msgid "Quiz"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:91
+msgid "You haven't created any quiz yet !"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:92
+msgid "Click on a \"<b>Create Button</b>\" just above to begin."
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:112
+msgid "Questions you may ask about this plugin"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:114
+msgid "Do not forget to take a look at the official F.A.Q : "
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:117
+msgid "What is a \"TrueFalse\" quiz ?"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:119
+msgid ""
+"When playing a TrueFalse quiz, people have to give the right answer for each "
+"of your questions.\n"
+"\t\t\t\tAt the end, they can share their score with their friends on social "
+"media."
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:122 views/WPVQShowQuizzes.php:135
+msgid "Examples : "
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:125
+msgid "How Much Do You Actually Know About <code>#RandomTopic</code>"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:126
+msgid "Can You Answer These Basic <code>#RandomTopic</code> Questions?"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:127 views/WPVQShowQuizzes.php:140
+msgid "Click here to see an example."
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:130
+msgid "What is a \"Personality\" quiz ?"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:132
+msgid ""
+"By playing a Personality quiz, people have to answer questions about them, "
+"their behavor, what they like, etc. \n"
+"\t\t\t\t\tAt the end, you tell them which kind of people they are."
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:138
+msgid "Which <code>#RandomTVShow</code> Character Are You?"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:139
+msgid "What Does Your <code>#RandomStuff</code> Say About Your Personality?"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:143
+msgid "How to insert a quiz in my article or page ?"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:145
+msgid ""
+"Just look at the <code>shortcode column</code> in the main table above. Copy "
+"and paste this shortcode to the content of your page/post, and save it ! The "
+"quiz will appear on the page."
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:148
+msgid "I need help / I need a new feature / I need a pizza"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:150
+msgid ""
+"About the pizza, we have already eaten it, sorry. But if you need something "
+"else, feel free to contact us"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:150
+msgid "by clicking here"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:150
+msgid "in french or english"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:153
+msgid ""
+"All the answers to my quizzes are shown on a 3 columns grid. Is there a way "
+"to change it ?"
+msgstr ""
+
+#: views/WPVQShowQuizzes.php:155
+msgid ""
+"Yup ! Try this shortcode : <code>[viralQuiz id=XXX columns=2]</code> to "
+"display your answers on a 2 columns grid."
+msgstr ""
+
+#: wp-viral-quiz.php:49
+#, php-format
+msgid "I'm %%personality%%"
+msgstr ""
+
+#: wp-viral-quiz.php:50 wp-viral-quiz.php:51
+#, php-format
+msgid "I'm %%personality%%, and you ?"
+msgstr ""
+
+#: wp-viral-quiz.php:54
+#, php-format
+msgid "I got %%score%% of %%total%% right"
+msgstr ""
+
+#: wp-viral-quiz.php:55 wp-viral-quiz.php:56
+#, php-format
+msgid "I got %%score%% of %%total%% right, and you ?"
+msgstr ""
+
+#: wp-viral-quiz.php:67
+msgid "SOMETHING NEW is happening with WP Viral Quiz !"
+msgstr ""
+
+#: wp-viral-quiz.php:69
+msgid ""
+"Discover the <strong>new \"Awesome Addons\" page</strong>, and add new "
+"features to your quizzes."
+msgstr ""
+
+#: wp-viral-quiz.php:73
+msgid "Cool, hide this message and show me !"
+msgstr ""
+
+#: wp-viral-quiz.php:298 wpvq-settings-page.php:758
+msgid "Settings"
+msgstr ""
+
+#: wp-viral-quiz.php:299
+msgid "Players"
+msgstr ""
+
+#: wp-viral-quiz.php:349
+msgid "You have to give a name to your quiz please !"
+msgstr ""
+
+#: wp-viral-quiz.php:350
+msgid "You have to set a score condition for each appreciations !"
+msgstr ""
+
+#: wpvq-settings-page.php:28 wpvq-settings-page.php:745
+msgid "General Options"
+msgstr ""
+
+#: wpvq-settings-page.php:35
+msgid "Auto-scroll on game"
+msgstr ""
+
+#: wpvq-settings-page.php:43
+msgid "Scroll speed<br>(in milliseconds)"
+msgstr ""
+
+#: wpvq-settings-page.php:51
+msgid "Refresh browser on page changes"
+msgstr ""
+
+#: wpvq-settings-page.php:62 wpvq-settings-page.php:746
+msgid "Multipages Quiz Settings"
+msgstr ""
+
+#: wpvq-settings-page.php:69
+msgid "Display progressbar"
+msgstr ""
+
+#: wpvq-settings-page.php:77
+msgid "Text in the progressbar"
+msgstr ""
+
+#: wpvq-settings-page.php:85
+msgid "Progressbar color"
+msgstr ""
+
+#: wpvq-settings-page.php:93
+msgid "Time before changing page"
+msgstr ""
+
+#: wpvq-settings-page.php:93
+msgid "(in milliseconds)"
+msgstr ""
+
+#: wpvq-settings-page.php:104 wpvq-settings-page.php:747
+msgid "Ads Settings"
+msgstr ""
+
+#: wpvq-settings-page.php:111
+msgid "Top Ads Code"
+msgstr ""
+
+#: wpvq-settings-page.php:119
+msgid "Bottom Ads Code"
+msgstr ""
+
+#: wpvq-settings-page.php:127
+msgid "No ads for these quizzes :"
+msgstr ""
+
+#: wpvq-settings-page.php:138
+msgid "Enable Facebook Share Button"
+msgstr ""
+
+#: wpvq-settings-page.php:145
+msgid "Your Facebook APP ID"
+msgstr ""
+
+#: wpvq-settings-page.php:153
+msgid "Don't use Facebook API"
+msgstr ""
+
+#: wpvq-settings-page.php:161
+msgid "Facebook SDK already included"
+msgstr ""
+
+#: wpvq-settings-page.php:172 wpvq-settings-page.php:749
+msgid "Social Networking Options"
+msgstr ""
+
+#: wpvq-settings-page.php:179
+msgid "Display button for :"
+msgstr ""
+
+#: wpvq-settings-page.php:187
+msgid "Which Twitter hashtag do you want to use:"
+msgstr ""
+
+#: wpvq-settings-page.php:198 wpvq-settings-page.php:240
+msgid "Social Media Sharebox Settings "
+msgstr ""
+
+#: wpvq-settings-page.php:198
+msgid "<span class=\"vq-badge vq-badge-primary\">For Personality Quiz</span>"
+msgstr ""
+
+#: wpvq-settings-page.php:205 wpvq-settings-page.php:248
+msgid "Text on your page<br />(below the quiz) :"
+msgstr ""
+
+#: wpvq-settings-page.php:213 wpvq-settings-page.php:256
+msgid "Content for Twitter :"
+msgstr ""
+
+#: wpvq-settings-page.php:221 wpvq-settings-page.php:264
+msgid "Content for Facebook Title :"
+msgstr ""
+
+#: wpvq-settings-page.php:229 wpvq-settings-page.php:272
+msgid "Content for Facebook Description :"
+msgstr ""
+
+#: wpvq-settings-page.php:240
+msgid "<span class=\"vq-badge vq-badge-primary\">For TrueFalse Quiz</span>"
+msgstr ""
+
+#: wpvq-settings-page.php:283 wpvq-settings-page.php:751
+msgid "Enable Auto Update"
+msgstr ""
+
+#: wpvq-settings-page.php:290
+msgid "Your Envato Purchase Code :"
+msgstr ""
+
+#: wpvq-settings-page.php:301 wpvq-settings-page.php:752
+msgid "Under the Hood"
+msgstr ""
+
+#: wpvq-settings-page.php:308
+msgid "Don't resize GIF picture"
+msgstr ""
+
+#: wpvq-settings-page.php:316
+msgid "Auto Scroll Offset"
+msgstr ""
+
+#: wpvq-settings-page.php:324
+msgid "Custom CSS code"
+msgstr ""
+
+#: wpvq-settings-page.php:341
+msgid "Feel free to contact us"
+msgstr ""
+
+#: wpvq-settings-page.php:343
+msgid "if you need help about this settings page."
+msgstr ""
+
+#: wpvq-settings-page.php:353
+msgid "Auto-scroll to the next question each time someone click an answer."
+msgstr ""
+
+#: wpvq-settings-page.php:376
+msgid "Refresh browser when changing quiz page (cool for pageviews++)"
+msgstr ""
+
+#: wpvq-settings-page.php:385
+msgid ""
+"Configure your multipages quizzes easily. To understand how to create a "
+"multipages quiz,"
+msgstr ""
+
+#: wpvq-settings-page.php:387
+msgid "read the #3 on the FAQ."
+msgstr ""
+
+#: wpvq-settings-page.php:406
+msgid "Hide progressbar"
+msgstr ""
+
+#: wpvq-settings-page.php:407
+msgid "Display above the quiz"
+msgstr ""
+
+#: wpvq-settings-page.php:408
+msgid "Display below the quiz"
+msgstr ""
+
+#: wpvq-settings-page.php:409
+msgid "Display above and below"
+msgstr ""
+
+#: wpvq-settings-page.php:422
+msgid "Leave blank"
+msgstr ""
+
+#: wpvq-settings-page.php:423
+msgid "Show progress percentage (ex: 70%)"
+msgstr ""
+
+#: wpvq-settings-page.php:424
+msgid "Show progress page per page (ex: page 7/10)"
+msgstr ""
+
+#: wpvq-settings-page.php:448
+msgid ""
+"With no pause, people won't see if they are right or wrong "
+"<strong>(TriviaQuiz only)</strong>."
+msgstr ""
+
+#: wpvq-settings-page.php:458
+msgid ""
+"You can <strong>put some ads above and below each of your quizzes</strong>. "
+"Just copy and paste the HTML code of your ads in the field below."
+msgstr ""
+
+#: wpvq-settings-page.php:460
+msgid ""
+"If you don't want to display ads for some quizzes, put their ID in the \"no "
+"ads\" field (comma separated)."
+msgstr ""
+
+#: wpvq-settings-page.php:498
+msgid ""
+"To enable the Facebook share button, you have to create a Facebook App with "
+"your Facebook account. Don't panic, <strong>it's VERY easy</strong>."
+msgstr ""
+
+#: wpvq-settings-page.php:500
+msgid "Click here to understand how to create a Facebook App."
+msgstr ""
+
+#: wpvq-settings-page.php:518
+msgid "We do not recommend it, check this box if you know what you are doing."
+msgstr ""
+
+#: wpvq-settings-page.php:529
+msgid ""
+"Check if FB SDK is already included on your site. Ignore it if you don't "
+"understand."
+msgstr ""
+
+#: wpvq-settings-page.php:538
+msgid "What share buttons do you want to display below the quiz results?"
+msgstr ""
+
+#: wpvq-settings-page.php:540
+msgid ""
+"If you don't want to display share buttons under a particular quiz, you can "
+"disable them when you create your quiz."
+msgstr ""
+
+#: wpvq-settings-page.php:570
+msgid ""
+"Configure share box content for Facebook and Twitter, when people share your "
+"quizzes. "
+msgstr ""
+
+#: wpvq-settings-page.php:572
+msgid ""
+"Unfortunately, <strong>Google+ does not let us customize the text</strong> "
+"when sharing."
+msgstr ""
+
+#: wpvq-settings-page.php:574
+msgid "will be replaced by the final result"
+msgstr ""
+
+#: wpvq-settings-page.php:575
+msgid "will be replaced by the personality description"
+msgstr ""
+
+#: wpvq-settings-page.php:576 wpvq-settings-page.php:624
+msgid "will be replaced by the number of questions"
+msgstr ""
+
+#: wpvq-settings-page.php:577 wpvq-settings-page.php:625
+msgid "will be replaced by the name of your quiz"
+msgstr ""
+
+#: wpvq-settings-page.php:620
+msgid "Same as the previous section, but for trivia quiz only."
+msgstr ""
+
+#: wpvq-settings-page.php:622
+msgid "will be replaced by the final score"
+msgstr ""
+
+#: wpvq-settings-page.php:623
+msgid "will be replaced by the appreciation"
+msgstr ""
+
+#: wpvq-settings-page.php:670
+msgid ""
+"To enable auto-update (very recommended), you have to put your Envato "
+"Purchase Code here."
+msgstr ""
+
+#: wpvq-settings-page.php:672
+msgid "Click here to understand how to get your purchase code."
+msgstr ""
+
+#: wpvq-settings-page.php:688
+msgid "Complex or very specific settings. Ignore them if you don't need them."
+msgstr ""
+
+#: wpvq-settings-page.php:697
+msgid ""
+"Do not resize gif automatically on your quizzes (resize destroyes the "
+"animation)"
+msgstr ""
+
+#: wpvq-settings-page.php:743
+msgid "Sections Menu :"
+msgstr ""
+
+#: wpvq-settings-page.php:748
+msgid "Facebook Share Button"
+msgstr ""
+
+#: wpvq-settings-page.php:750
+msgid "Social Media Sharebox Settings"
+msgstr ""
+
+#: wpvq-settings-page.php:763
+msgid "Settings updated."
+msgstr ""

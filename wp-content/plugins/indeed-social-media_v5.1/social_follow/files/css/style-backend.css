@@ -1,0 +1,20 @@
+/******* General Options *********/
+.isf_row_wrapp{
+	margin-top: 20px;
+	font-size: 11px;
+}
+.isf_mini_label_dashboard{
+	font-weight: bold;
+	font-size: 13px;
+}
+.isf_row_wrapp .isf_row_dashboard input{
+	width: 400px;
+}
+.isf_row_dashboard{
+	width: 100%;
+}
+.isf_row_dashboard .isf_inside_row_label{
+	width: 11%;
+	display: inline-block;
+	font-weiget: bold;
+}

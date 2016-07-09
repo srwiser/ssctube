@@ -1,0 +1,50 @@
+07-09-2016 @ 15:19:12 - Queuing 2.4.0 - wc_update_240_options
+07-09-2016 @ 15:19:12 - Queuing 2.4.0 - wc_update_240_shipping_methods
+07-09-2016 @ 15:19:12 - Queuing 2.4.0 - wc_update_240_api_keys
+07-09-2016 @ 15:19:12 - Queuing 2.4.0 - wc_update_240_webhooks
+07-09-2016 @ 15:19:12 - Queuing 2.4.0 - wc_update_240_refunds
+07-09-2016 @ 15:19:12 - Queuing 2.4.0 - wc_update_240_db_version
+07-09-2016 @ 15:19:12 - Queuing 2.4.1 - wc_update_241_variations
+07-09-2016 @ 15:19:12 - Queuing 2.4.1 - wc_update_241_db_version
+07-09-2016 @ 15:19:12 - Queuing 2.5.0 - wc_update_250_currency
+07-09-2016 @ 15:19:12 - Queuing 2.5.0 - wc_update_250_db_version
+07-09-2016 @ 15:19:12 - Queuing 2.6.0 - wc_update_260_options
+07-09-2016 @ 15:19:12 - Queuing 2.6.0 - wc_update_260_termmeta
+07-09-2016 @ 15:19:12 - Queuing 2.6.0 - wc_update_260_zones
+07-09-2016 @ 15:19:12 - Queuing 2.6.0 - wc_update_260_zone_methods
+07-09-2016 @ 15:19:12 - Queuing 2.6.0 - wc_update_260_refunds
+07-09-2016 @ 15:19:12 - Queuing 2.6.0 - wc_update_260_db_version
+07-09-2016 @ 15:19:13 - Running wc_update_240_options callback
+07-09-2016 @ 15:19:13 - Finished wc_update_240_options callback
+07-09-2016 @ 15:19:13 - Running wc_update_240_shipping_methods callback
+07-09-2016 @ 15:19:13 - Unable to dispatch WooCommerce updater: Operation timed out after 1001 milliseconds with 0 bytes received
+07-09-2016 @ 15:19:13 - Finished wc_update_240_shipping_methods callback
+07-09-2016 @ 15:19:13 - Running wc_update_240_api_keys callback
+07-09-2016 @ 15:19:13 - Finished wc_update_240_api_keys callback
+07-09-2016 @ 15:19:13 - Running wc_update_240_webhooks callback
+07-09-2016 @ 15:19:13 - Finished wc_update_240_webhooks callback
+07-09-2016 @ 15:19:13 - Running wc_update_240_refunds callback
+07-09-2016 @ 15:19:14 - Finished wc_update_240_refunds callback
+07-09-2016 @ 15:19:14 - Running wc_update_240_db_version callback
+07-09-2016 @ 15:19:14 - Finished wc_update_240_db_version callback
+07-09-2016 @ 15:19:14 - Running wc_update_241_variations callback
+07-09-2016 @ 15:19:14 - Finished wc_update_241_variations callback
+07-09-2016 @ 15:19:14 - Running wc_update_241_db_version callback
+07-09-2016 @ 15:19:14 - Finished wc_update_241_db_version callback
+07-09-2016 @ 15:19:14 - Running wc_update_250_currency callback
+07-09-2016 @ 15:19:14 - Finished wc_update_250_currency callback
+07-09-2016 @ 15:19:14 - Running wc_update_250_db_version callback
+07-09-2016 @ 15:19:14 - Finished wc_update_250_db_version callback
+07-09-2016 @ 15:19:14 - Running wc_update_260_options callback
+07-09-2016 @ 15:19:14 - Finished wc_update_260_options callback
+07-09-2016 @ 15:19:14 - Running wc_update_260_termmeta callback
+07-09-2016 @ 15:19:14 - Finished wc_update_260_termmeta callback
+07-09-2016 @ 15:19:14 - Running wc_update_260_zones callback
+07-09-2016 @ 15:19:14 - Finished wc_update_260_zones callback
+07-09-2016 @ 15:19:14 - Running wc_update_260_zone_methods callback
+07-09-2016 @ 15:19:14 - Finished wc_update_260_zone_methods callback
+07-09-2016 @ 15:19:14 - Running wc_update_260_refunds callback
+07-09-2016 @ 15:19:14 - Finished wc_update_260_refunds callback
+07-09-2016 @ 15:19:14 - Running wc_update_260_db_version callback
+07-09-2016 @ 15:19:14 - Finished wc_update_260_db_version callback
+07-09-2016 @ 15:19:14 - Data update complete

@@ -1,0 +1,280 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Viral Quiz</title>
+	
+	<meta name="description" content="Wordpress Plugin to Build BuzzFeed-like Quizzes">
+	<meta name="author" content="Stéphane Paton & Sébastien Trutié de Vaucresson">
+	<meta name="copyright" content="Stéphane Paton & Sébastien Trutié de Vaucresson">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-04-21T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FCFCFC;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_20.jpg);}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-viral-quiz">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#install" title="Install">Install</a></li>
+			<li><a href="#create_a_truefalse_quiz" title="Create a TrueFalse Quiz">Create a TrueFalse Quiz</a></li>
+			<li><a href="#create_a_personality_quiz" title="Create a Personality Quiz">Create a Personality Quiz</a></li>
+			<li><a href="#enable_facebook_share_button" title="Enable Facebook Share Button">Enable Facebook Share Button</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Stéphane Paton & Sébastien Trutié de Vaucresson 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Viral Quiz</h1>
+	
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 04/21/2015</li>
+	<li>latest update: 04/21/2015</li>
+	<li>by: Stéphane Paton & Sébastien Trutié de Vaucresson</li>
+	
+	<li>email: <a href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#112;&#97;&#116;&#111;&#110;&#46;&#109;&#101;&#100;ia">&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#112;&#97;&#116;&#111;&#110;&#46;&#109;&#101;&#100;ia</a></li>
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="install">
+	<div class="page-header"><h3>Install</h3><hr class="notop"></div>
+<h2>
+	1. Go on your Wordpress Admin</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	2. Click &quot;Plugins &raquo; Add new&quot;</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	3. Click &quot;Upload plugin&quot;</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	4. Select the plugin zipped file and validate</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	5. Activate the plugin</h2>
+</section>
+<section id="create_a_truefalse_quiz">
+	<div class="page-header"><h3>Create a TrueFalse Quiz</h3><hr class="notop"></div>
+<h2>
+	1. Open WP Viral Quiz</h2>
+<h2>
+	<img alt="" src="assets/images/image_1.png" style="width: 366px; height: 131px;"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	2. Chose &quot;Create a True/False Quiz&quot;</h2>
+<h2>
+	<img alt="" src="assets/images/image_2.png"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	3. Enter the name of your quiz</h2>
+<h2>
+	<img alt="" src="assets/images/image_3.png" style="width: 666px; height: 122px;"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	4. Create your first question&nbsp;</h2>
+<h2>
+	<img alt="" src="assets/images/image_4.png" style="width: 648px; height: 598px;"></h2>
+<h2>
+	<img alt="" src="assets/images/image_5.png" style="width: 648px; height: 117px;"></h2>
+<h2>
+	5. Save the Quiz</h2>
+<p>
+	&nbsp;</p>
+<h2>
+	6. Back on the WP Viral Quiz dashboard where your quiz is now present</h2>
+<p>
+	&nbsp;</p>
+<h2>
+	7. &nbsp;To insert a quiz in your article or page : copy and paste the shortcode to the content of your page/post, and save it ! The quiz will appear on the page.</h2>
+<h2>
+	<img alt="" src="assets/images/image_7.png"></h2>
+<h2>
+	&nbsp;</h2>
+<p>
+	&nbsp;</p>
+</section>
+<section id="create_a_personality_quiz">
+	<div class="page-header"><h3>Create a Personality Quiz</h3><hr class="notop"></div>
+<h2>
+	1. Open WP Viral Quiz</h2>
+<h2>
+	<img alt="" src="assets/images/image_1.png" style="width: 366px; height: 131px;"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	2. Chose &quot;Create a Personality Quiz&quot;</h2>
+<h2>
+	<img alt="" src="assets/images/image_8.png"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	3. Create your personalities</h2>
+<h2>
+	<img alt="" src="assets/images/image_9.png" style="width: 648px; height: 616px;"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	4. Create your first question</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	<img alt="" src="assets/images/image_10.png">&nbsp;<img alt="" src="assets/images/image_5.png" style="width: 648px; height: 117px;"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	5. Save the Quiz</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	6. Back on the WP Viral Quiz dashboard where your quiz is now present</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	7. &nbsp;To insert a quiz in your article or page : copy and paste the shortcode to the content of your page/post, and save it ! The quiz will appear on the page.</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	<img alt="" src="assets/images/image_6.png" style="width: 1024px; height: 260px;"></h2>
+<p>
+	&nbsp;</p>
+</section>
+<section id="enable_facebook_share_button">
+	<div class="page-header"><h3>Enable Facebook Share Button</h3><hr class="notop"></div>
+<h2>
+	To activate the Facebook Share Button on WP Viral Quiz, you have to create your own Facebook APP. Don&rsquo;t panic, it&rsquo;s very easy ! It take 2 minutes.</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	1. Go on your Personnal Facebook Account.</h2>
+<h2>
+	Yup, first step is easy. Go on www.facebook.com and log in to your personal account.</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	2. Go on the Facebook Developper Website</h2>
+<h2>
+	Just click here to go on the Facebook Dev Site : https://developers.facebook.com/apps/</h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	3. Click on &ldquo;Create a new app&rdquo;</h2>
+<h2>
+	<img alt="" src="assets/images/image_11.jpg" style="width: 1024px; height: 616px;"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	4. Choose &ldquo;Website&rdquo;</h2>
+<h2>
+	<img alt="" src="assets/images/image_13.jpg" style="width: 1024px; height: 593px;"></h2>
+<h2>
+	5. Click on &ldquo;Skip and Create App ID&rdquo;</h2>
+<h2>
+	<img alt="" src="assets/images/image_14.jpg" style="width: 1024px; height: 491px;"></h2>
+<h2>
+	6. Type a name, set a category (&ldquo;communication&rdquo; is OK, we don&rsquo;t care) and validate.</h2>
+<h2>
+	<img alt="" src="assets/images/image_15.jpg"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	7. Go on the Settings Page of your Facebook App</h2>
+<h2>
+	<img alt="" src="assets/images/image_16.jpg" style="width: 1024px; height: 489px;"></h2>
+<h2>
+	8. Click on &ldquo;Add Plateform&rdquo;, type your website URL in the field &ldquo;Site URL&rdquo; and save changes.</h2>
+<h2>
+	<img alt="" src="assets/images/image_17.jpg"  ></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	<img alt="" src="assets/images/image_18.jpg"></h2>
+<h2>
+	9. Copy and paste your &ldquo;APP ID&rdquo; on the WP Viral Quiz settings page (on your blog !)</h2>
+<h2>
+	<img alt="" src="assets/images/image_19.jpg"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	<img alt="" src="assets/images/image_12.jpg"></h2>
+<h2>
+	&nbsp;</h2>
+<h2>
+	Save changes, et voila ! It&rsquo;s finished. People can share their results when they play your quizzes.</h2>
+</section>
+
+	</div>
+</body>
+</html>

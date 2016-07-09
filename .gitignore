@@ -1,0 +1,14 @@
+.htaccess
+*.htaccess
+*.sql
+wp-config.php
+wp-content/cache/*
+*.zip
+*.png
+*.jpg
+*.gif
+*.jpeg
+*.eot
+*.svg
+*.ttf
+*.woff
