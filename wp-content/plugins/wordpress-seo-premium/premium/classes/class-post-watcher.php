@@ -9,11 +9,7 @@
 class WPSEO_Post_Watcher extends WPSEO_Watcher {
 
 	/**
-	 * Type of watcher.
-	 *
-	 * This will be used for the filters.
-	 *
-	 * @var string
+	 * @var string Type of watcher, will be used for the filters.
 	 */
 	protected $watch_type = 'post';
 
@@ -31,24 +27,23 @@ class WPSEO_Post_Watcher extends WPSEO_Watcher {
 	 */
 	public function page_scripts( $current_page ) {
 		if ( $current_page === 'edit.php' || $current_page === 'edit-tags.php' ) {
-			wp_enqueue_script( 'wp-seo-premium-quickedit-notification', plugin_dir_url( WPSEO_PREMIUM_FILE ) . 'assets/js/wp-seo-premium-quickedit-notification' . WPSEO_CSSJS_SUFFIX . '.js', array( 'jquery' ), WPSEO_VERSION );
+			wp_enqueue_script( 'wp-seo-premium-quickedit-notification', plugin_dir_url( WPSEO_PREMIUM_FILE ) . 'assets/js/wp-seo-premium-quickedit-notification-330' . WPSEO_CSSJS_SUFFIX . '.js', array( 'jquery' ), WPSEO_VERSION );
 		}
 	}
 
 	/**
-	 * Add an extra field to post edit screen so we know the old url in the 'post_updated' hook
+	 * Add an extra field to post edit screen so we know the old URL in the 'post_updated' hook
 	 *
 	 * @param WP_Post $post The post object to get the ID from.
 	 */
 	public function old_url_field( $post ) {
 		// $post must be set.
-		if ( null != $post ) {
+		if ( null !== $post ) {
 			$url = $this->get_target_url( $post->ID );
 
 			echo $this->parse_url_field( $url, 'post' );
 		}
 	}
-
 
 	/**
 	 * Detect if the slug changed, hooked into 'post_updated'
@@ -89,12 +84,8 @@ class WPSEO_Post_Watcher extends WPSEO_Watcher {
 		// Get the new URL.
 		$new_url = $this->get_target_url( $post_id );
 
-		// Check if we should create a redirect.
-		if ( $this->should_create_redirect( $old_url, $new_url ) ) {
-			$this->create_redirect( $old_url, $new_url );
-
-			$this->set_notification( $old_url, $new_url );
-		}
+		// Maybe we can undo the created redirect.
+		$this->notify_undo_slug_redirect( $old_url, $new_url );
 	}
 
 	/**
@@ -133,15 +124,16 @@ class WPSEO_Post_Watcher extends WPSEO_Watcher {
 			$id = 'wpseo_redirect_' . md5( $url );
 
 			// Format the message.
-			/* translators %1$s: Yoast SEO Premium, %2$s: <a href='{create_redirect_url}'>, %3$s: </a> */
+			/* translators: %1$s: Yoast SEO Premium, %2$s: List with actions, %3$s: <a href=''>, %4$s: </a> */
 			$message = sprintf(
-				__( '%1$s detected that you moved a post to the trash. %2$sClick here to create a redirect from the old post URL%3$s.', 'wordpress-seo-premium' ),
+				__( '%1$s detected that you moved a post to the trash. You can either: %2$s Don\'t know what to do? %3$sRead this post%4$s.', 'wordpress-seo-premium' ),
 				'Yoast SEO Premium',
-				'<a href=\'' . $this->javascript_create_redirect( $url, $id ) . '\'>',
+				$this->get_delete_action_list( $url, $id ),
+				'<a target="_blank" href="https://yoast.com/deleting-pages-from-your-site/#utm_source=wordpress-seo-premium-' . $this->watch_type . '-watcher&amp;utm_medium=dialog&amp;utm_campaign=410-redirect">',
 				'</a>'
 			);
 
-			$this->create_notification( $message, 'trash', $id );
+			$this->create_notification( $message, 'trash' ); // , $id );
 		}
 
 	}
@@ -153,20 +145,20 @@ class WPSEO_Post_Watcher extends WPSEO_Watcher {
 	 */
 	public function detect_post_untrash( $post_id ) {
 
-		if ( $url = $this->check_if_redirect_needed( $post_id, true ) ) {
+		if ( $redirect = $this->check_if_redirect_needed( $post_id, true ) ) {
 
-			$id = 'wpseo_undo_redirect_' . md5( $url );
+			$id = 'wpseo_undo_redirect_' . md5( $redirect->get_origin() );
 
 			// Format the message.
-			/* translators %1$s: Yoast SEO Premium, %2$s: <a href='{undo_redirect_url}'>, %3$s: </a> */
+			/* translators: %1$s: Yoast SEO Premium, %2$s: <a href='{undo_redirect_url}'>, %3$s: </a> */
 			$message = sprintf(
-				__( '%1$s detected that you restored a post from the trash. %2$sClick here to remove the redirect%3$s.', 'wordpress-seo-premium' ),
+				__( '%1$s detected that you restored a post from the trash. %2$sClick here to remove the redirect%3$s', 'wordpress-seo-premium' ),
 				'Yoast SEO Premium',
-				'<a href=\'' . $this->javascript_undo_redirect( $url, $id ). '\'>',
-				'</a>'
+				'<button type="button" class="button" onclick=\'' . $this->javascript_undo_redirect( $redirect, $id ). '\'>',
+				'</button>'
 			);
 
-			$this->create_notification( $message, 'untrash', $id );
+			$this->create_notification( $message, 'untrash' );
 		}
 
 	}
@@ -178,6 +170,12 @@ class WPSEO_Post_Watcher extends WPSEO_Watcher {
 	 */
 	public function detect_post_delete( $post_id ) {
 
+		// We don't want to redirect menu items.
+		if ( is_nav_menu_item( $post_id ) ) {
+			return;
+		}
+
+
 		// When the post comes from the trash or if the post is a revision then skip further execution.
 		if ( get_post_status( $post_id ) === 'trash' || wp_is_post_revision( $post_id ) ) {
 			return;
@@ -185,46 +183,32 @@ class WPSEO_Post_Watcher extends WPSEO_Watcher {
 
 		// Is a redirect needed.
 		if ( $url = $this->check_if_redirect_needed( $post_id ) ) {
-
-			$id = 'wpseo_redirect_' . md5( $url );
-
-			// Format the message.
-			/* translators %1$s: Yoast SEO Premium, %2$s: <a href='{create_redirect_url}'>, %3$s: </a> */
-			$message = sprintf(
-				__( '%1$s detected that you deleted a post. %2$sClick here to create a redirect from the old post URL%3$s.', 'wordpress-seo-premium' ),
-				'Yoast SEO Premium',
-				'<a href=\'' . $this->javascript_create_redirect( $url, $id ) . '\'>',
-				'</a>'
-			);
-
-			$this->create_notification( $message, 'delete', $id );
+			$this->set_delete_notification( $url );
 		}
-
 	}
 
 	/**
-	 * Look up if url does exists in the current redirects
+	 * Look up if URL does exists in the current redirects
 	 *
-	 * @param string $url Url to search for.
+	 * @param string $url URL to search for.
 	 *
 	 * @return bool
 	 */
-	public function check_if_redirect_exists( $url ) {
-		$redirect_manager = new WPSEO_URL_Redirect_Manager();
-		$redirects        = $redirect_manager->get_redirects();
+	protected function get_redirect( $url ) {
+		$redirect_manager = new WPSEO_Redirect_Manager();
 
-		return array_key_exists( $url, $redirects );
+		return $redirect_manager->get_redirect( $url );
 	}
 
 	/**
 	 * This method checks if a redirect is needed.
 	 *
-	 * This method will check if url as redirect already exists
+	 * This method will check if URL as redirect already exists
 	 *
 	 * @param integer $post_id      The current post ID.
-	 * @param bool    $should_exist Boolean to determine if the url should be exist as a redirect.
+	 * @param bool    $should_exist Boolean to determine if the URL should be exist as a redirect.
 	 *
-	 * @return string|void
+	 * @return WPSEO_Redirect|string|void
 	 */
 	protected function check_if_redirect_needed( $post_id, $should_exist = false ) {
 
@@ -236,12 +220,17 @@ class WPSEO_Post_Watcher extends WPSEO_Watcher {
 			// If $url is not a single /, there may be the option to create a redirect.
 			if ( $url !== '/' ) {
 				// Message should only be shown if there isn't already a redirect.
-				if ( $this->check_if_redirect_exists( $url ) === $should_exist ) {
-					return $url;
+				$redirect = $this->get_redirect( $url );
+
+				if ( is_a( $redirect, 'WPSEO_Redirect' ) === $should_exist ) {
+					if ( $should_exist === false  ) {
+						return $url;
+					}
+
+					return $redirect;
 				}
 			}
 		}
-
 	}
 
 	/**
@@ -260,7 +249,7 @@ class WPSEO_Post_Watcher extends WPSEO_Watcher {
 	}
 
 	/**
-	 * Get the old url
+	 * Get the old URL
 	 *
 	 * @param object $post        The post object with the new values.
 	 * @param object $post_before The post object with the old values.
@@ -284,32 +273,9 @@ class WPSEO_Post_Watcher extends WPSEO_Watcher {
 	}
 
 	/**
-	 * Display notification
-	 *
-	 * @param string $old_url The old url to the post.
-	 * @param string $new_url Unused. The new generated redirect url.
-	 */
-	protected function set_notification( $old_url, $new_url ) {
-		$id = 'wpseo_redirect_' . md5( $old_url );
-
-		// Format the message.
-		/* translators %1$s: Yoast SEO Premium, %2$s: <a href='{admin_redirect_url}'>, %3$s: <a href='{undo_redirect_url}'> and %4$s: </a> */
-		$message = sprintf(
-			__( '%1$s created a %2$sredirect%4$s from the old post URL to the new post URL. %3$sClick here to undo this%4$s.', 'wordpress-seo-premium' ),
-			'Yoast SEO Premium',
-			'<a target="_blank" href="' . $this->admin_redirect_url( $old_url ) . '">',
-			'<a href=\'' . $this->javascript_undo_redirect( $old_url, $id ). '\'>',
-			'</a>'
-		);
-
-		// Only set notification when the slug change was not saved through quick edit.
-		$this->create_notification( $message, 'slug_change', $id );
-	}
-
-	/**
 	 * Setting the hooks for the post watcher
 	 */
-	private function set_hooks() {
+	protected function set_hooks() {
 		add_action( 'admin_enqueue_scripts', array( $this, 'page_scripts' ) );
 
 		// Add old URL field to post edit screen.
@@ -327,6 +293,33 @@ class WPSEO_Post_Watcher extends WPSEO_Watcher {
 
 		// Detect a post delete.
 		add_action( 'before_delete_post', array( $this, 'detect_post_delete' ) );
+
+		new WPSEO_Post_Slug_Watcher();
 	}
 
+	/**
+	 * Returns the undo message for the post.
+	 *
+	 * @return string
+	 */
+	protected function get_undo_slug_notification() {
+		/* translators: %1$s: Yoast SEO Premium, %2$s: <a href='{admin_redirect_url}'>, %3$s: <a href='{undo_redirect_url}'> and %4$s: </a> */
+		return __(
+			'%1$s created a %2$sredirect%3$s from the old post URL to the new post URL. %4$sClick here to undo this%5$s',
+			'wordpress-seo-premium'
+		);
+	}
+
+	/**
+	 * Returns the delete message for the post.
+	 *
+	 * @return string
+	 */
+	protected function get_delete_notification() {
+		/* translators: %1$s: Yoast SEO Premium, %2$s: List with actions, %3$s: <a href='{post_with_explaination.}'>, %4$s: </a> */
+		return __(
+			'%1$s detected that you deleted a post. You can either: %2$s Don\'t know what to do? %3$sRead this post %4$s.',
+			'wordpress-seo-premium'
+		);
+	}
 }

@@ -1,0 +1,225 @@
+#lbg_logo{
+	background:url(../images/plg_icon_large.png) top left no-repeat;
+	background-position:5px,10px;
+	padding:0px 0px 0px 43px;
+	margin-bottom:10px;
+}
+.lbg_list-1 {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	line-height:27px;
+	margin: 0 0 1.5em 0;	
+}
+
+.lbg_list-1 li {
+	background-image: url(../images/list-1.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	padding-left: 25px;
+}
+.lbg_list-1 a { 
+	text-decoration:underline;
+}
+.lbg_subtitle {
+	color:#21759b;
+	font-weight:bold;
+	font-size:14px;
+}
+.lbg_regGray {
+	font-size:12px;
+	color:#999999;
+	font-style:italic;
+}
+.lbg_regGrayWithBg {
+	font-size:12px;
+	color:#999999;
+	background:#dddeee;
+	font-style:italic;
+}
+
+#deletelayer {
+	background-image:url(../images/icons/bg_delete.jpg) !important;
+	background-color:#F00;
+	padding-left:25px;
+	border-color:#F00;
+	font-weight:bold;
+}
+#deletelayer:hover {
+	border:1px solid #333;
+}
+#deletelayer[disabled],
+#deletelayer:disabled {
+	color: #FFF !important;
+	background-image:url(../images/icons/bg_delete_disabled.jpg) !important;
+}
+
+
+#deletealllayers {
+	background-image:url(../images/icons/bg_delete.jpg) !important;
+	background-color:#F00;
+	padding-left:25px;
+	border-color:#F00;
+	font-weight:bold;
+}
+#deletealllayers:hover {
+	border:1px solid #333;
+}
+#deletealllayers[disabled],
+#deletealllayers:disabled {
+	color: #FFF !important;
+	background-image:url(../images/icons/bg_delete_disabled.jpg) !important;
+}
+/** SORTABLE **/
+
+#circular_countdown_sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+#circular_countdown_sortable li { margin: 0 5px 5px 5px; padding: 9px 0px 11px 0px; font-size: 12px; text-indent:10px; /*height: 1.5em;*/ }
+html>body #circular_countdown_sortable li { /*height: 1.5em;*/ line-height: 1.2em; }
+	.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+#circular_countdown_sortable a {
+	color:#21759b;
+	font-size:11px;
+	font-weight:normal;
+	text-decoration:underline;
+}	
+#circular_countdown_sortable a:hover {
+	color:#FF0000;
+}
+#circular_countdown_sortable .options {
+	float:right;
+	padding: 0px 10px 0px 0px;
+}
+#circular_countdown_sortable .cursor_move {
+	cursor:move;
+}
+
+
+/** SORTABLE Layers **/
+#circular_countdown_layers_sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+#circular_countdown_layers_sortable li { margin: 0 5px 5px 5px; padding: 9px 0px 11px 0px; font-size: 12px; text-indent:10px; /*height: 1.5em;*/ }
+html>body #circular_countdown_layers_sortable li { /*height: 1.5em;*/ line-height: 1.2em; }
+	.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+#circular_countdown_layers_sortable a {
+	color:#21759b;
+	font-size:11px;
+	font-weight:normal;
+	text-decoration:underline;
+}	
+#circular_countdown_layers_sortable a:hover {
+	color:#FF0000;
+}
+#circular_countdown_layers_sortable .options {
+	float:right;
+	padding: 0px 10px 0px 0px;
+}
+#circular_countdown_layers_sortable .cursor_move {
+	cursor:move;
+}
+
+
+.toogle-btn-closed {
+	width:33px;
+	height:31px;
+	background:url(../images/icons/open_div.gif) 0 -5px no-repeat;
+	float:right;
+	cursor: pointer;
+}
+.toogle-btn-opened {
+	width:33px;
+	height:31px;
+	background:url(../images/icons/close_div.gif) 0 -5px no-repeat;
+	float:right;
+	cursor: pointer;
+}
+.toggleable {
+	clear:both;
+	display:none;
+	background:#FFFFFF;
+	padding:10px;
+	margin-bottom:-11px;
+	font-weight:normal;
+	cursor:default;
+}
+.ajax-message {
+	padding:5px;
+	text-align:center;
+}
+.text_line_settings {
+	border-bottom:1px solid #CCC;
+	margin:10px 0 0 -50px;
+}
+.my_draggable {
+	padding:0;
+	top:200px;
+	left:150px;
+	position:absolute;
+	background-color: transparent;
+	cursor: move;
+}
+.my_draggable_activated {
+	xcolor:#00F;
+	-webkit-box-shadow:0 0 20px #00F; 
+	-moz-box-shadow: 0 0 20px #00F; 
+	box-shadow:0 0 20px #00F;
+}
+
+.delete_text {
+	background:url(../images/delete_icon.png) left top no-repeat;
+	width:94px;
+	height:35px;
+	cursor:pointer;
+}
+
+#circular_countdown_updating_witness {
+	display:none;
+	position: fixed;
+	bottom: 40px;
+	right:20px;
+	padding:3px 5px;
+	border:1px solid #CCCCCC;
+}
+.data_saved {
+	color:#0C0;
+	font-size:22px;
+	font-weight:bold;
+	margin:20px;
+}
+#editCSSClasses_message {
+	background:#060;
+	border: 1px solid #333;
+	font-size:12px;
+	color:#FFF;
+	padding:10px;
+	display:none;
+}
+
+#previewDialog {
+	/*width:1100px;
+	height:600px;*/
+}
+#dialogDataSaved {
+	display:none;
+}
+.bringElemToFront {
+	position:relative;
+	z-index:100;
+}
+.inlinefloatleft {
+	float:left;
+	display:inline-block;
+}
+
+
+/* for slider for settings (transparency, volume etc. */
+.ui-slider-range {
+	background:#003399;	
+}
+
+.ui-accordion-content {
+	height:auto !important;
+}
+
+.ui-datepicker {
+	/* it already has position absolute */
+	z-index:1000 !important;
+}
