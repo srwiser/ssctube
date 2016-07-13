@@ -15,3 +15,4 @@ wp-content/cache/*
 *.svg
 *.ttf
 *.woff
+wp-content/plugins/bwp-minify/cache/*
