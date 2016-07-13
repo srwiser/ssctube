@@ -9,6 +9,21 @@
 class WPSEO_Premium_Import_Manager {
 
 	/**
+	 * Constructor.
+	 */
+	public function __construct() {
+		// Allow option of importing from other 'other' plugins.
+		add_action( 'wpseo_import_other_plugins', array( $this, 'add_premium_import_options' ) );
+
+		// Handle premium imports.
+		add_action( 'wpseo_handle_import', array( $this, 'do_premium_imports' ) );
+
+		// Add htaccess import block.
+		add_action( 'wpseo_import_tab_content', array( $this, 'add_htaccess_import_block' ) );
+		add_action( 'wpseo_import_tab_header', array( $this, 'htaccess_import_header' ) );
+	}
+
+	/**
 	 * Redirection import success message
 	 *
 	 * @param string $message The message being added before success notice.
@@ -67,8 +82,13 @@ class WPSEO_Premium_Import_Manager {
 
 	/**
 	 * Do redirection(http://wordpress.org/plugins/redirection/) import.
+	 *
+	 * @return bool
 	 */
 	private function redirection_import() {
+
+		// Bool if we've imported redirects.
+		$redirects_imported = false;
 
 		if ( ( $wpseo_post = filter_input( INPUT_POST, 'wpseo', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY ) ) && isset( $wpseo_post['import_redirection'] )  ) {
 			global $wpdb;
@@ -86,16 +106,15 @@ class WPSEO_Premium_Import_Manager {
 
 			// Loop and add redirect to Yoast SEO Premium.
 			if ( count( $items ) > 0 ) {
-				$url_redirection_manager   = new WPSEO_URL_Redirect_Manager();
-				$regex_redirection_manager = new WPSEO_REGEX_Redirect_Manager();
+
 				foreach ( $items as $item ) {
-					// Check if redirect is a regex redirect.
-					if ( 1 == $item->regex ) {
-						$regex_redirection_manager->create_redirect( $item->url, $item->action_data, $item->action_code );
+					$format = WPSEO_Redirect::FORMAT_PLAIN;
+					if ( 1 === (int) $item->regex ) {
+						$format = WPSEO_Redirect::FORMAT_REGEX;
 					}
-					else {
-						$url_redirection_manager->create_redirect( $item->url, $item->action_data, $item->action_code );
-					}
+
+					$this->get_redirect_option()->add( new WPSEO_Redirect( $item->url, $item->action_data, $item->action_code, $format ) );
+					$redirects_imported = true;
 				}
 
 				// Add success message.
@@ -106,13 +125,20 @@ class WPSEO_Premium_Import_Manager {
 				add_filter( 'wpseo_import_message', array( $this, 'message_redirection_no_redirects' ) );
 			}
 		}
+
+		return $redirects_imported;
 	}
 
 	/**
 	 * Do .htaccess file import.
+	 *
+	 * @return bool
 	 */
 	private function htaccess_import() {
 		global $wp_filesystem;
+
+		// Bool if we've imported redirects.
+		$redirects_imported = false;
 
 		if ( $htaccess = filter_input( INPUT_POST, 'htaccess' ) ) {
 
@@ -124,16 +150,9 @@ class WPSEO_Premium_Import_Manager {
 
 			// Regexpressions.
 			$regex_patterns = array(
-				'url'   => '`[^# ]Redirect ([0-9]+) ([^\s]+) ([^\s]+)`i',
-				'regex' => '`[^# ]RedirectMatch ([0-9]+) ([^\s]+) ([^\s]+)`i',
+				WPSEO_Redirect::FORMAT_PLAIN => '`[^# ]Redirect ([0-9]+) ([^\s]+) ([^\s]+)`i',
+				WPSEO_Redirect::FORMAT_REGEX => '`[^# ]RedirectMatch ([0-9]+) ([^\s]+) ([^\s]+)`i',
 			);
-
-			// Create redirect manager objects.
-			$url_redirection_manager   = new WPSEO_URL_Redirect_Manager();
-			$regex_redirection_manager = new WPSEO_REGEX_Redirect_Manager();
-
-			// Bool if we've imported redirects.
-			$redirects_imported = false;
 
 			// Loop through patterns.
 			foreach ( $regex_patterns as $regex_type => $regex_pattern ) {
@@ -151,16 +170,9 @@ class WPSEO_Premium_Import_Manager {
 							$target = trim( $redirects[3][ $i ] );
 
 							// Check if both source and target are not empty.
-							if ( '' != $source && '' != $target ) {
-
-								// Check redirect type.
-								if ( 'regex' == $regex_type ) {
-									$regex_redirection_manager->create_redirect( $source, $target, $type );
-								}
-								else {
-									$url_redirection_manager->create_redirect( $source, $target, $type );
-								}
-
+							if ( '' !== $source && '' !== $target ) {
+								// Adding the redirect to importer class.
+								$this->get_redirect_option()->add( new WPSEO_Redirect( $source, $target, $type, $regex_type ) );
 								$redirects_imported = true;
 
 								// Trim the original redirect.
@@ -168,7 +180,6 @@ class WPSEO_Premium_Import_Manager {
 
 								// Comment out added redirect in our new .htaccess file.
 								$new_htaccess = str_ireplace( $original_redirect, '#' . $original_redirect, $new_htaccess );
-
 							}
 						}
 					}
@@ -177,7 +188,6 @@ class WPSEO_Premium_Import_Manager {
 
 			// Check if we've imported any redirects.
 			if ( $redirects_imported ) {
-
 				// Set the filesystem URL.
 				$url = wp_nonce_url( 'admin.php?page=wpseo_import', 'update-htaccess' );
 
@@ -210,27 +220,28 @@ class WPSEO_Premium_Import_Manager {
 			}
 		}
 
+		return $redirects_imported;
 	}
 
 	/**
 	 * Do premium imports
 	 */
 	public function do_premium_imports() {
-		$this->redirection_import();
-		$this->htaccess_import();
+		if ( $this->redirection_import() || $this->htaccess_import() ) {
+
+			// Save and export the redirects.
+			$this->get_redirect_option()->save();
+
+			$redirect_manager = new WPSEO_Redirect_Manager();
+			$redirect_manager->export_redirects();
+		}
 	}
 
 	/**
 	 * Add premium import options to import list
-	 *
-	 * @param string $content The content where the checkbox is added to.
-	 *
-	 * @return string
 	 */
-	public function filter_add_premium_import_options( $content ) {
-		$content .= Yoast_Form::get_instance()->checkbox( 'import_redirection', __( 'Import from Redirection?', 'wordpress-seo-premium' ) );
-
-		return $content;
+	public function add_premium_import_options() {
+		Yoast_Form::get_instance()->checkbox( 'import_redirection', __( 'Import from Redirection?', 'wordpress-seo-premium' ) );
 	}
 
 	/**
@@ -271,4 +282,18 @@ class WPSEO_Premium_Import_Manager {
 		echo '</div>' . PHP_EOL;
 	}
 
+	/**
+	 * Redirect option, used to save and fetch the redirects.
+	 *
+	 * @return WPSEO_Redirect_Option
+	 */
+	private function get_redirect_option() {
+		static $redirect_option;
+
+		if ( ! $redirect_option ) {
+			$redirect_option = new WPSEO_Redirect_Option();
+		}
+
+		return $redirect_option;
+	}
 }

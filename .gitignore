@@ -1,6 +1,9 @@
 .htaccess
 *.htaccess
 *.sql
+!sql_tasks/create_txns.sql
+*.pyc
+settings_local.py
 wp-config.php
 wp-content/cache/*
 *.zip
@@ -12,3 +15,4 @@ wp-content/cache/*
 *.svg
 *.ttf
 *.woff
+wp-content/plugins/bwp-minify/cache/*
