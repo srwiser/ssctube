@@ -15,4 +15,5 @@ wp-content/cache/*
 *.svg
 *.ttf
 *.woff
+*.gz
 wp-content/plugins/bwp-minify/cache/*
