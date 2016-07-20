@@ -31,7 +31,7 @@ if ( ! empty( $link_html ) ) {
 $css_class = array( $styles['css_class'], 'vc_gitem-post-data' );
 $css_class[] = 'vc_gitem-post-data-source-post_author';
 if ( $use_custom_fonts && ! empty( $atts['google_fonts_data'] ) && isset( $atts['google_fonts_data']['values']['font_family'] ) ) {
-	wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $atts['google_fonts_data']['values']['font_family'] ), '//fonts.googleapis.com/css?family=' . $atts['google_fonts_data']['values']['font_family'] . $subsets );
+	wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $atts['google_fonts_data']['values']['font_family'] ), 'https://fonts.googleapis.com/css?family=' . $atts['google_fonts_data']['values']['font_family'] . $subsets );
 }
 $output .= '<div class="' . esc_attr( implode( ' ', $css_class ) ) . '" >';
 $style = '';

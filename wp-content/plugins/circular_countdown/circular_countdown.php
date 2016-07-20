@@ -70,7 +70,7 @@ function circular_countdown_activate() {
   `pageBgAdditionalCss` varchar(255) NOT NULL DEFAULT '',
   
   `pluginFontFamily` varchar(255) NOT NULL DEFAULT '\'PT Serif\', serif',
-  `pluginFontFamilyGoogleLink` varchar(255) NOT NULL DEFAULT 'http://fonts.googleapis.com/css?family=PT+Serif:400,700',
+  `pluginFontFamilyGoogleLink` varchar(255) NOT NULL DEFAULT 'https://fonts.googleapis.com/css?family=PT+Serif:400,700',
   `circleRadius` smallint(5) unsigned NOT NULL DEFAULT '85',
   
   `circleLineWidth` smallint(5) unsigned NOT NULL DEFAULT '20',

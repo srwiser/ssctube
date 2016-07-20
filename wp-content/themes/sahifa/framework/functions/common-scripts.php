@@ -164,13 +164,13 @@ function tie_enqueue_font ( $got_font) {
 		}elseif( $font_type == 'early-google'){
 			$font_name = str_replace (" ","", $font_pieces[0] );
 			$protocol = is_ssl() ? 'https' : 'http';
-			wp_enqueue_style( $font_name , $protocol.'://fonts.googleapis.com/earlyaccess/'.$font_name);
+			wp_enqueue_style( $font_name , 'https://fonts.googleapis.com/earlyaccess/'.$font_name);
 			
 		}else{
 			$font_name = str_replace (" ","+", $font_pieces[0] );
 			$font_variants = str_replace ("|",",", $font_pieces[1] );
 			$protocol = is_ssl() ? 'https' : 'http';
-			wp_enqueue_style( $font_name , $protocol.'://fonts.googleapis.com/css?family='.$font_name . ':' . $font_variants.$char_set );
+			wp_enqueue_style( $font_name , 'https://fonts.googleapis.com/css?family='.$font_name . ':' . $font_variants.$char_set );
 		}
 	}
 }

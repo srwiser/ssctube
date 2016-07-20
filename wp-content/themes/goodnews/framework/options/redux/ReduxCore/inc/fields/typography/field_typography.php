@@ -588,7 +588,7 @@
                     $link .= "&amp;subset=" . implode( ',', $subsets );
                 }
 
-                return '//fonts.googleapis.com/css?family=' . str_replace( '|', '%7C', $link );
+                return 'https://fonts.googleapis.com/css?family=' . str_replace( '|', '%7C', $link );
             }
 
             /**
