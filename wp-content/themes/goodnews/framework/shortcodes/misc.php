@@ -35,9 +35,9 @@ if (! array_key_exists($font, $safe_fonts) && $font != '') {
 			$gfont = str_replace(' ', '+', $gfont);
 			
 			if ($font_weight == 700) {
-			      wp_enqueue_style( "mom_typography_$gfontn", "http://fonts.googleapis.com/css?family=$gfont:400,700&subset=latin,greek-ext,cyrillic-ext,greek,vietnamese,latin-ext,cyrillic", false, null, 'all' );	
+			      wp_enqueue_style( "mom_typography_$gfontn", "https://fonts.googleapis.com/css?family=$gfont:400,700&subset=latin,greek-ext,cyrillic-ext,greek,vietnamese,latin-ext,cyrillic", false, null, 'all' );	
 			} else {
-			      wp_enqueue_style( "mom_typography_$gfontn", "http://fonts.googleapis.com/css?family=$gfont&subset=latin,greek-ext,cyrillic-ext,greek,vietnamese,latin-ext,cyrillic", false, null, 'all' );	
+			      wp_enqueue_style( "mom_typography_$gfontn", "https://fonts.googleapis.com/css?family=$gfont&subset=latin,greek-ext,cyrillic-ext,greek,vietnamese,latin-ext,cyrillic", false, null, 'all' );	
 			}
 			
 }

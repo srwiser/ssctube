@@ -35,7 +35,7 @@ if ( is_array( $settings ) && ! empty( $settings ) ) {
 }
 
 if ( isset( $google_fonts_data['values']['font_family'] ) ) {
-	wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $google_fonts_data['values']['font_family'] ), '//fonts.googleapis.com/css?family=' . $google_fonts_data['values']['font_family'] . $subsets );
+	wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $google_fonts_data['values']['font_family'] ), 'https://fonts.googleapis.com/css?family=' . $google_fonts_data['values']['font_family'] . $subsets );
 }
 
 if ( ! empty( $styles ) ) {

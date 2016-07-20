@@ -570,7 +570,7 @@ function taqyeem_enqueue_font ( $got_font) {
 		$font_variants 	= str_replace ("|",",", $font_pieces[1] );
 				
 		$protocol = is_ssl() ? 'https' : 'http';
-		wp_enqueue_style( $font_name , $protocol.'://fonts.googleapis.com/css?family='.$font_name . ':' . $font_variants.$char_set );
+		wp_enqueue_style( $font_name , 'https://fonts.googleapis.com/css?family='.$font_name . ':' . $font_variants.$char_set );
 	}
 }
 

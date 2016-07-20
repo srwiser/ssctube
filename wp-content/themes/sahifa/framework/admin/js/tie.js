@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
 		var selected_font = jQuery("select[name='tie_options[typography_test][font]'] option:selected").val();
 		var parts = selected_font.split(':');
 		var output =  parts[0] ;
-		jQuery("#tie-fonts-css").attr( 'href' , 'http://fonts.googleapis.com/css?family='+output );
+		jQuery("#tie-fonts-css").attr( 'href' , 'https://fonts.googleapis.com/css?family='+output );
 		jQuery("#font-preview").css( "font-family" , output );
 	});
 
