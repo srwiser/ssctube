@@ -7,13 +7,5 @@ settings_local.py
 wp-config.php
 wp-content/cache/*
 *.zip
-*.png
-*.jpg
-*.gif
-*.jpeg
-*.eot
-*.svg
-*.ttf
-*.woff
 *.gz
 wp-content/plugins/bwp-minify/cache/*
