@@ -1,7 +1,7 @@
 .htaccess
 *.htaccess
 *.sql
-!sql_tasks/create_txns.sql
+!sql_tasks/*.sql
 *.pyc
 settings_local.py
 wp-config.php
