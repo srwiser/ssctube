@@ -16,14 +16,14 @@ msg['From'] = "admin@ssctube.com"
 msg['To'] = sys.argv[1]
 
 # Create the body of the message (a plain-text and an HTML version).
-text = "Hi!\n\nThanks for subscribing to SSCTube Online SSC CGL Test Series.\n\n\n You will receive your login credentials to access SSCTube test panel \n http://onlinessctest.in within 24 hours.\n\n\nFor any further query related to your order, please contact:\n admin@ssctube.com\nOr\nWhatsapp @ 9582383798"
+text = "Hi!\n\nThanks for your order at SSCTube.\n\n\n You will receive your product access within 24 hours.\n\n\nFor any further query related to your order, please contact:\n admin@ssctube.com\nOr\nWhatsapp @ 9582383798"
 html = """\
 <html>
   <head></head>
   <body>
     <p>Hi!<br><br>
-       Thanks for subscribing to SSCTube Online SSC CGL Test Series.<br><br>
-       You will receive your login credentials to access SSCTube test panel <a href="http://onlinessctest.in">Onlinessctest</a> within 24 hours.<br>
+       Thanks for your order at SSCTube.<br><br>
+       You will receive your product access within 24 hours.<br>
     </p>
     <br><br>
     <p> For any further query related to your order, <br>
