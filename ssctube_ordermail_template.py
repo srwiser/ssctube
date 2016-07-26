@@ -8,11 +8,11 @@ from email.mime.text import MIMEText
 def prompt(prompt):
     return raw_input(prompt).strip()
 
-fromaddr = 'admin@ssctube.com'
+fromaddr = 'info@ssctube.com'
 toaddr  = sys.argv[1]
 msg = MIMEMultipart('alternative')
 msg['Subject'] = "Order Confirmation - "+sys.argv[2]+" - Your order with ssctube.com is successful"
-msg['From'] = "admin@ssctube.com"
+msg['From'] = "info@ssctube.com"
 msg['To'] = sys.argv[1]
 
 # Create the body of the message (a plain-text and an HTML version).
